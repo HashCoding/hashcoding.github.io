@@ -1,0 +1,92 @@
+@font-face {font-family: 'iconfont';
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.container {
+	position: relative;;
+	height: 100%;
+}
+section.firstscreen {
+	height: 100%;
+	background-color: rgb(27, 188, 155);
+	overflow: hidden;
+	position: relative;
+    padding: 0 10px;
+}
+.firstscreen  path {
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 2100;
+	-webkit-animation: dash 4.3s linear forwards;
+	-moz-animation: dash 4.3s linear forwards;
+	animation: dash 4.3s linear forwards;
+}
+.firstscreen .main-team-ife {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+.firstscreen .main-team-name {
+	height: 400px;
+    position: relative;
+    top: 44%;
+    margin-top: -200px;
+
+}
+.firstscreen .main-team-word {
+	font-size: 25px;
+	line-height: 1.5;
+	color: #FFFFFF;
+	text-align: center;
+    position: relative;
+    top:40%;
+
+}
+
+.firstscreen #arow_down {
+    width:100px;
+    text-align: center;
+    /*以下代码实现.arow_down的绝对定位下的水平居中*/
+    margin: 0 auto;
+    position:absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.firstscreen #arow_down a {
+    text-decoration: none;
+}
+
+.firstscreen .down{
+    font-family:"iconfont" !important;
+    font-size:25px;
+    font-style:normal;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.firstscreen .down:hover {
+    cursor: pointer;
+}
+
+/* animation hhere */
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@-moz-keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}

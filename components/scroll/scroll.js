@@ -19,7 +19,7 @@ window.onload = function() {
         et.addHandler(scroll, 'click', function() {
 
             var timer = setInterval(function() {
-                window.scrollBy(0, -70);
+                win.scrollBy(0, -70);
                 if(document.body.scrollTop == 0) {
                     clearTimeout(timer)
                 }
