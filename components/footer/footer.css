@@ -1,14 +1,14 @@
-section.footer {
+.footer {
     background-color: #2a2a2a;
     height: 140px;
     line-height: 140px;
 }
 
-section.footer p {
+.footer p {
     text-align: center;
     color: #cccccc;
 }
 
-section.footer p a:hover {
+.footer p a:hover {
     color: #ccc;
 }
