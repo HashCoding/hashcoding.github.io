@@ -4,7 +4,17 @@
 window.onload = function() {
     (function(et) {
 
-        var scroll = document.getElementById("scroll");
+        var scroll = document.getElementById("scroll"),
+            win = window;
+
+        var MAX_SCROLL_VALUE = 200;
+        et.addHandler(win, 'scroll', function() {
+            if(win.pageYOffset > MAX_SCROLL_VALUE) {
+                scroll.style.display = "block";
+            } else {
+                scroll.style.display = "none";
+            }
+        })
 
         et.addHandler(scroll, 'click', function() {
 
