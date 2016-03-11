@@ -1,9 +1,10 @@
 /**
  * Created by rccoder on 2016/3/10.
  */
-window.onload = function() {
-    (function(et) {
+(function(et) {
+    addLoadListener(_scroll);
 
+    function _scroll() {
         var scroll = document.getElementById("scroll"),
             win = window;
 
@@ -25,6 +26,6 @@ window.onload = function() {
                 }
             }, 10)
         });
+    };
 
-    })(EventUtil);
-}
+})(EventUtil);

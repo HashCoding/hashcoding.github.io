@@ -1,5 +1,7 @@
 (function(et) {
-    window.onload = function() {
+    addLoadListener(_firstscreen);
+
+    function _firstscreen() {
         var arow = document.getElementById("arow_down"),
             h = document.documentElement.clientHeight;
 
