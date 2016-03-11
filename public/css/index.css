@@ -2,11 +2,22 @@
 	position: relative;;
 	height: 100%;
 }
-section.main {
+section.section {
 	height: 100%;
-	background-color: rgb(27, 188, 155);
-	overflow: hidden;
+	overflow: hidden;;
 	position: relative;
+}
+.section .section-title {
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 30px;
+	line-height: 2;
+	text-align: center;
+}
+/* section main start */
+section.main {
+
+	background-color: rgb(27, 188, 155);
     padding: 0 10px;
 }
 .main  path {
@@ -37,6 +48,53 @@ section.main {
     top:40%;
 
 }
+/* section main end */
+
+
+/* section intro start */
+.intro {
+	background-color: #38A6F1;
+}
+.intro .intro-main {
+	width: 1000px;
+	margin: 10px auto 0;
+}
+.intro .member-header-list {
+	display: flex;
+	-webkit-display: flex;
+}
+.mhl-item {
+	flex-grow: 1;
+	margin: 0 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .2s ease-in-out;
+}
+.mhl-item:hover {
+	transform: scale(1.1);
+}
+.mhl-item > a {
+	display: block;
+	padding-bottom: 100%;
+	background: #FFFFFF
+}
+
+.intro .member-content-list {
+	position: relative;
+	height: 360px;
+	margin: 35px auto 0;	
+}
+.mcl-item {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 360px;
+	width: 1000px;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+/* section intro end */
+
 
 /* animation hhere */
 
