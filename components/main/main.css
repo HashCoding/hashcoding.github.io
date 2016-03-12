@@ -10,11 +10,11 @@
 	text-align: center;
 }
 .main {
-	background-color: #38A6F1;
+	background-color: #009999;
 }
 .main .main-intro {
 	width: 1000px;
-	margin: 10px auto 0;
+	margin: 40px auto 0;
 }
 .main .member-header-list {
 	display: flex;
