@@ -1,22 +1,22 @@
-/* section intro start */
-section.intro {
+/* main start */
+.main {
 	height: 100%;
 }
-.section .section-title {
+.main .main-title {
 	color: #FFFFFF;
 	font-weight: 100;
 	font-size: 30px;
 	line-height: 2;
 	text-align: center;
 }
-.intro {
+.main {
 	background-color: #38A6F1;
 }
-.intro .intro-main {
+.main .main-intro {
 	width: 1000px;
 	margin: 10px auto 0;
 }
-.intro .member-header-list {
+.main .member-header-list {
 	display: flex;
 	-webkit-display: flex;
 }
@@ -36,7 +36,7 @@ section.intro {
 	background: #FFFFFF
 }
 
-.intro .member-content-list {
+.main .member-content-list {
 	position: relative;
 	height: 360px;
 	margin: 35px auto 0;	
@@ -50,5 +50,5 @@ section.intro {
 	background: #FFFFFF;
 	border-radius: 10px;
 }
-/* section intro end */
+/* main end */
 
