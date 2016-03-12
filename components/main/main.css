@@ -1,0 +1,54 @@
+/* main start */
+.main {
+	height: 100%;
+}
+.main .main-title {
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 30px;
+	line-height: 2;
+	text-align: center;
+}
+.main {
+	background-color: #38A6F1;
+}
+.main .main-intro {
+	width: 1000px;
+	margin: 10px auto 0;
+}
+.main .member-header-list {
+	display: flex;
+	-webkit-display: flex;
+}
+.mhl-item {
+	flex-grow: 1;
+	margin: 0 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .2s ease-in-out;
+}
+.mhl-item:hover {
+	transform: scale(1.1);
+}
+.mhl-item > a {
+	display: block;
+	padding-bottom: 100%;
+	background: #FFFFFF
+}
+
+.main .member-content-list {
+	position: relative;
+	height: 360px;
+	margin: 35px auto 0;	
+}
+.mcl-item {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 360px;
+	width: 1000px;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+/* main end */
+

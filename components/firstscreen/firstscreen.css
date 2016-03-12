@@ -93,11 +93,6 @@ svg path {
 	color: white;
 }
 
-.main {
-	width: 1000px;
-	height: 2000px;
-}
-
 /* animation here */
 
 @keyframes dash {
