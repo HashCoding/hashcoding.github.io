@@ -70,7 +70,7 @@ svg path {
 	margin: 0 auto;
 
 	position:absolute;
-	bottom: 30px; 
+	bottom: 30px;
 	left: 0;
 	right: 0;
 }
@@ -88,7 +88,9 @@ svg path {
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-
+#arow_down:hover {
+    cursor: pointer;
+}
 .xiangxia:hover {
 	color: white;
 }
