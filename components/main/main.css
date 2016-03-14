@@ -1,7 +1,6 @@
 /* main start */
 .main {
-	height: 100%;
-    padding-top: 8%;
+    padding: 8% 0;
 }
 .main .main-title {
 	color: #FFFFFF;
@@ -49,7 +48,7 @@
     height: 120px;
 }
 .main .member-content-list li {
-    padding: 40px 60px;
+    padding: 20px 60px;
 }
 .mcl-item {
 	position: absolute;
@@ -67,4 +66,16 @@
     color: #009999;
 }
 /* main end */
-
+.main-idea {
+    padding: 40px;
+}
+.main-idea p{
+    text-align: center;
+    line-height: 40px;
+}
+.main-works {
+    padding: 40px;
+}
+.main-works p{
+    text-align: center;
+}
