@@ -1,16 +1,20 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HashCoding——2016百度前端学院</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css" />
 
-    <link rel="stylesheet" href="components/reset/reset.css">
-    <link rel="stylesheet" href="./components/main/main.css">
+	 <link rel="stylesheet" href="components/reset/reset.css">
+
 	<link rel="stylesheet" href="components/firstscreen/firstscreen.css">
+	<link rel="stylesheet" href="css/members.css">
 	<link rel="stylesheet" href="components/footer/footer.css">
-    <link rel="stylesheet" href="./components/scroll/scroll.css">
+
 </head>
 <body>
+
+	<section id="see1" class="panel se1" data-section-name="se1">
 	<div id="first_screen">
 		<div id="ife_logo">
 			<a href="http://ife.baidu.com/">
@@ -104,74 +108,46 @@
 			<i class="xiangxia">&#xe682;</i>
 		</div>
 	</div>
-	<div class="main section">
-		<h3 class="main-title member">团队成员</h3>
-        <div class="main-intro">
-            <ul class="member-header-list">
-                <li class="mhl-item"><a href="#"><img src="" alt=""></a></li>
-                <li class="mhl-item"><a href="#"><img src="./components/img/rccoder.png" alt=""></a></li>
-                <li class="mhl-item"><a href="#"><img src="" alt=""></a></li>
-                <li class="mhl-item"><a href="#"><img src="" alt=""></a></li>
-                <li class="mhl-item"><a href="#"><img src="" alt=""></a></li>
-            </ul>
-            <ul class="member-content-list">
-                <li class="mcl-item">
-                    第1个个人介绍 <br>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                </li>
-                <li class="mcl-item">
-                    <p>昵称：rccoder</p>
-                    <p>自我介绍：在校大学生，热爱 Web 开发，梦想成为一个全栈攻城师</p>
-                    <p>学校：哈尔滨工业大学（2013-2017）</p>
-                    <p>Homepage: <a href="http://www.rccoder.net">http://www.rccoder.net</a></p>
-                    <p>GitHub: <a href="https://github.com/rccoder">https://github.com/rccoder</a></p>
-                    <p>Zhihu: <a href="https://www.zhihu.com/people/rccoder">https://www.zhihu.com/people/rccoder</a></p>
-                    <p>Weibo: <a href="http://weibo.com/rccoder">http://weibo.com/rccoder</a></p>
-                </li>
-                <li class="mcl-item">
-                    第3个个人介绍 <br>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br> xxxxxxxxxxxxxxxxxxxx
-                </li>
-                <li class="mcl-item">
-                    第4个个人介绍 <br>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br> xxxxxxxxxxxxxxxxxxxxxxxx
-                </li>
-                <li class="mcl-item">
-                    第5个个人介绍 <br>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br> xxxxxxxxxxxxxxxxxxxxxxxxxxx
-                </li>
-            </ul>
-        </div>
-        <h3 class="main-title idea">我们的理念</h3>
-        <div class="main-idea">
-            <p>
-                坚持！就是胜利
-            </p>
-            <p>
-                坚持！就是胜利
-            </p>
-            <p>
-                坚持！就是胜利
-            </p>
-        </div>
-        <h3 class="main-title works">我们的作品</h3>
-        <div class="main-works">
-            <p>待开发...</p>
-        </div>
-	</div>
-    <div class="scroll" id="scroll">
-        <img src="./components/scroll/scroll.png" alt="">
-    </div>
-    <div class="section footer">
+	</section>
+
+	<section id="see2" class="panel se2" data-section-name="se2">
+		<div id="container"></div>
+	</section>
+
+	<section id="see3" class="panel se3" data-section-name="se3">
+		<div class="section footer">
         <p>
             Copyright&nbsp;2016 by <a href="http://hashcoding.github.io/">HashCoding</a>
         </p>
     </div>
+	</section>
 
-	<script src="components/EventUtil/EventUtil.js"></script>
-    <script src="./components/onload/onload.js"></script>
-	<script src="components/firstscreen/firstscreen.js"></script>
-	<script src="components/main/main.js"></script>
-    <script src="./components/scroll/scroll.js"></script>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/scrollify.min.js"></script>
+	
+		<script src="js/three.min.js"></script>
+		<script src="js/libs/tween.min.js"></script>
+		<script src="js/renderers/CSS3DRenderer.js"></script>
+		<script src="js/renderers/Projector.js"></script>
+		<script src="js/renderers/CanvasRenderer.js"></script>
+		<script src="./components/onload/onload.js"></script>
+		<script src="components/firstscreen/firstscreen.js"></script>
+		<script src="js/firstback.js"></script>
+		<script src="js/members.js"></script>
+		
+		
+	<script>
+		$(function() {
+			$(".panel").css({"height":$(window).height()});
+			$.scrollify({
+				section:".panel"
+			});
+			$(".scroll").click(function(e) {
+				e.preventDefault();
+				$.scrollify("move",$(this).attr("href"));
+			});
+		});
+	</script>
 </body>
 </html>

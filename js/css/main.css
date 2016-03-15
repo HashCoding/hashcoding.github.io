@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****** Main ********/
+
+body {
+	font-size:62.5%;
+	font-family: 'Lato', sans-serif;
+	color:#FFF;
+}
+h1 {
+	font-size:7em;
+	padding:1.7em 0 0 0;
+}
+h2 {
+	font-size:6em;
+	padding:0.5em 0 0.5em 0;
+}
+h3 {
+	font-size:2.3em;
+}
+dt {
+	font-size:2.3em;
+}
+dd {
+	font-size:1.9em;
+	padding:0.6em 0 0.9em 0;
+}
+p {
+	font-size:1.9em;
+	padding:0.4em 0 0.4em 0;
+}
+a:link,
+a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover,
+a:focus,
+a:active {
+	text-decoration:underline;
+}
+a.twitter:link,
+a.twitter:visited {
+	font-size:1.3em;
+	line-height:4em;
+	position:absolute;
+	left:40px;
+	bottom:25px;
+}
+a.twitter img {
+	border-radius:50%;
+	float:left;
+	border:1px solid #bbb;
+	padding:0.1em;
+	background:#FFF;
+}
+a.twitter span {
+	padding:0 0 0 0.6em;
+}
+header {
+	padding-bottom:5em;
+}
+.scroll {
+	position:relative;
+	font-size:1.3em;
+	margin-top:6em;
+	display:inline-block;
+
+}
+.scroll:hover {
+	text-decoration:none;
+}
+
+.scroll:after {
+	content:'';
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:40px;
+	margin:auto;
+	top:50px;
+	right:0;
+	bottom:0;
+	left:0;
+	-webkit-animation:3s arrow infinite ease;
+	animation:3s arrow infinite ease;
+}
+
+.scroll:after {
+	border-right:2px solid #FFF;
+	border-bottom:2px solid #FFF;
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	
+}
+.tagline {
+
+	font-size:2.3em;
+	letter-spacing:0.02em;
+	padding:0;
+}
+.panel {
+	height:100vh;
+	border-bottom:1px solid #666;
+}
+.home {
+	background:hsl(184,65%,49%);
+	text-align:center;
+}
+.overview {
+	background:hsl(350,92%,59%);
+
+}
+.configuration {
+	background:hsl(158,58%,52%);
+}
+.options {
+	background:hsl(28,100%,52%);
+}
+.methods {
+	background:hsl(200,60%,55%);
+}
+.inner {
+	width:960px;
+	margin:0 auto;
+}
+pre {
+	background:rgba(0,0,0,0.2);
+	padding:2em 0 2em 0;
+	font-size:2.1em;
+	margin-top:0.7em;
+}
+@-webkit-keyframes arrow {
+	0%,100% {
+		top:50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+@keyframes arrow {
+	0%,100% {
+		top:50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+@media (max-width:960px) {
+	.inner {
+		width:100%;
+
+	}
+	h1,h2,h3,p,pre,dl {
+		margin-left:30px;
+		margin-right:30px;
+	}
+}

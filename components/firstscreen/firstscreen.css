@@ -1,7 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+
 
 html,body{
 	font-family: "Microsoft Yahei";
@@ -20,13 +17,14 @@ html,body{
 #first_screen {
     height: 100%;
     width: 100%;
-    background-color: #009999;
+    position: absolute;
+    /*background-color: black;*/
 }
 
 #svg_logo {
 	width:600px;
 	height: 400px;
-	background-color: #009999;
+	/*background-color: black;*/
 
 	margin:  0 auto 0 auto;
 
