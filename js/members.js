@@ -53,13 +53,38 @@
 			var windowHalfX = window.innerWidth / 2;
 			var windowHalfY = window.innerHeight / 2;
 			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-
+			document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+			document.addEventListener( 'touchstart', onDocumentTouchMove, false );
 			function onDocumentMouseMove( event ) {
 
 				mouseX = ( event.clientX - windowHalfX );
 				mouseY = ( event.clientY - windowHalfY );
 
 			}
+			function onDocumentTouchMove( event ) {
+
+				if ( event.touches.length == 1 ) {
+
+                    event.preventDefault();
+
+                    mouseX = ( event.clientX - windowHalfX );
+					mouseY = ( event.clientY - windowHalfY );
+
+                }
+
+			}
+			function onDocumentTouchStart( event ) {
+
+                if ( event.touches.length > 1 ) {
+
+                    event.preventDefault();
+
+                   	mouseX = ( event.clientX - windowHalfX );
+					mouseY = ( event.clientY - windowHalfY );
+
+                }
+
+            }
 			var camera, scene, renderer;
 			var controls;
 			var elstyle={width:600,height:800,left:0,display:"none",opacity:0};
@@ -168,7 +193,7 @@
 				window.addEventListener( 'resize', onWindowResize, false );
 
 			}
-			
+			 // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				var oDiv=document.getElementById('container');
 				var domnodes=oDiv.firstChild.firstChild.childNodes;
 				var active=[];
@@ -177,6 +202,15 @@
 				for (var i = 0; i < domnodes.length; i++) {
 					active[i]=0;
 					(function (a) {
+
+						domnodes[a].addEventListener('touchstart',mousedownf);
+						domnodes[a].addEventListener('touchend',function (argument) {
+							if(up==0)
+							{
+								mouseupf();
+							}
+						});
+
 						domnodes[a].addEventListener('mousedown',mousedownf);
 						domnodes[a].addEventListener('mouseup',function (argument) {
 							if(up==0)
@@ -184,6 +218,7 @@
 								mouseupf();
 							}
 						});
+
 						function mousedownf(argument) {
 							
 							if (down==0) {
