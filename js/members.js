@@ -251,7 +251,7 @@
 											domnodes[b].style.height = elstyle.height + 'px';
 											}
 											tweenback6=new TWEEN.Tween( elstyle )
-											.to( { width:600,height:800}, 1000 )
+											.to( { width:610,height:800}, 1000 )
 											.easing( TWEEN.Easing.Elastic.InOut )
 											.onUpdate(update2);
 											
