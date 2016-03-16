@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务3</title>
+	<style>
+body{
+	margin: 0;
+	padding: 20px;
+}
+#main,#leftside,#rightside{
+	float: left;
+	box-sizing: border-box;
+}
+
+#container{
+	border: 1px solid #999;
+	background-color: #eee;
+	padding: 20px;
+}
+
+#main{
+	width: 100%;
+	min-width: 400px;
+}
+#main #main-child{
+	padding: 20px;
+	background-color: #fff;
+	margin: 0px 140px 0px 220px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+#leftside{
+	padding: 20px;
+	width: 200px;
+	float: left;
+	background-color: #fff;
+	margin-left: -100%; 
+	border: 1px solid #999;
+}
+#rightside{
+	padding-bottom: 20px;
+	width: 120px;
+	background-color: #fff;
+	float: left;
+	margin-left: -120px;
+	border: 1px solid #999;
+}
+#rightside img{
+	margin: 20px 20px 0 20px;
+}
+#leftside img{
+	float: left;
+}
+#leftside .name{
+	word-wrap: break-word;
+	width: 58px;
+	height: auto;
+	float: left;
+	font-size: 12px;
+	margin-left:20px; 
+}
+
+#leftside::after,#container::after {
+	content: '';
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility:hidden;
+	display:block;
+	}
+	</style>
+</head>
+<!-- <link rel="stylesheet" href="style - 双飞燕.css"> -->
+<body>
+	<div id="container">
+	<div id="main">
+		<div id="main-child">
+			
+					团队介绍：<br>
+				团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍团队介绍	
+		</div>
+			
+		</div>
+		<div id="leftside">
+
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+			<div class="name">hashingcode</div>
+
+		</div>
+		
+
+		<div id="rightside">
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+			<img src="images/1.jpg" alt="logo" style="width: 80px;height: 80px;">
+		</div>
+	</div>
+</body>
+</html>
